@@ -1,0 +1,75 @@
+* {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: rgb(131,58,180);
+  background-image: linear-gradient(to left, #c6ffdd 0%, #fbd786, #f7797d 100%);
+
+}
+
+
+.app{
+  background-image: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
+  padding: 10px;
+  border-radius:16px ;
+  width: 75%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title{
+  text-shadow: 1px 1px 2px #d4fc79;
+}
+
+input[type="text"]{
+  text-align: left;
+  margin: 14px 0 20px;
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  padding: 10px 20px;
+  border-radius: 150px;
+  border: 2px solid #accbee;
+  border-bottom: 3px solid yellow;
+  border-right: 3px solid yellow;
+  transition: 0.2s;
+  cursor: text;
+  color: #333;
+}
+
+input[type='text']::placeholder{
+  color: #333;
+}
+
+input[type='text']:focus{
+  border: 2px solid yellow;
+  border-bottom: 3px solid #accbee;
+  border-right: 3px solid #accbee;
+  box-shadow: 0 5px 10px #333;
+  transform: translateX(3px);
+}
+
+ul{
+align-self: flex-start;
+}
+
+li{
+  list-style: none	;
+  font-size: 16px;
+}
+
+li::before{
+  content: ' \2217';
+  text-decoration: none;
+  margin-right: 10px;
+color: #fbd786;
+}
