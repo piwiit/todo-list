@@ -64,15 +64,40 @@ align-self: flex-start;
 
 li{
   list-style: none	;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: start;
 }
-
-
 
 li::before{
   content: ' \2217';
   text-decoration: none;
   margin-right: 10px;
 color: #fbd786;
+}
+
+li:hover:after{
+content: " (terminer)";
+opacity: 0;
+font-style: italic;
+font-size: 1.1rem;
+color: #fd4a1d;
+animation: classAnim 1s forwards;
+}
+
+li.linethrough:hover:after{
+  content: " (supprimer)";
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #fd4a1d;
+
+}
+
+.linethrough{
+  text-decoration: line-through;
+}
+
+@keyframes classAnim {
+  to {
+    opacity: 1;
+  }
 }
