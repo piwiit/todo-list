@@ -58,11 +58,6 @@ input[type='text']:focus{
   transform: translateX(3px);
 }
 
-
-#style{
-  margin-bottom: 20px;
-}
-
 ul{
 align-self: flex-start;
 }
