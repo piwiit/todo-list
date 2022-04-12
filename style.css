@@ -58,6 +58,11 @@ input[type='text']:focus{
   transform: translateX(3px);
 }
 
+
+#style{
+  margin-bottom: 20px;
+}
+
 ul{
 align-self: flex-start;
 }
@@ -65,7 +70,10 @@ align-self: flex-start;
 li{
   list-style: none	;
   font-size: 16px;
+  text-align: start;
 }
+
+
 
 li::before{
   content: ' \2217';
